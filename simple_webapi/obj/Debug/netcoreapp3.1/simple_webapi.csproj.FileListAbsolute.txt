@@ -24,3 +24,4 @@ C:\Users\esmanur.yenidogan\source\repos\simple_webapi\simple_webapi\obj\Debug\ne
 C:\Users\esmanur.yenidogan\source\repos\simple_webapi\simple_webapi\obj\Debug\netcoreapp3.1\simple_webapi.dll
 C:\Users\esmanur.yenidogan\source\repos\simple_webapi\simple_webapi\obj\Debug\netcoreapp3.1\simple_webapi.pdb
 C:\Users\esmanur.yenidogan\source\repos\simple_webapi\simple_webapi\obj\Debug\netcoreapp3.1\simple_webapi.genruntimeconfig.cache
+C:\Users\esmanur.yenidogan\source\repos\simple_webapi\simple_webapi\obj\Debug\netcoreapp3.1\simple_webapi.csproj.AssemblyReference.cache

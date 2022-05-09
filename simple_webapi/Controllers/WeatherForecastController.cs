@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace simple_webapi.Controllers
 {
     [ApiController]
-    [Route("api/weather")]
+    [Route("Api/WeatherForecast")]
     public class WeatherForecastController : ControllerBase
     {
         private static readonly string[] Summaries = new[]
@@ -24,7 +24,7 @@ namespace simple_webapi.Controllers
             _logger = logger;
         }
 
-        [Route("get_weather"), HttpGet]
+        [Route("GetWeatherForecast"), HttpGet]
         public IEnumerable<WeatherForecast> GetWeatherForecast()
         {
             var rng = new Random();
@@ -33,8 +33,7 @@ namespace simple_webapi.Controllers
                 Date = DateTime.Now.AddDays(index),
                 TemperatureC = rng.Next(-20, 55),
                 Summary = Summaries[rng.Next(Summaries.Length)]
-            })
-            .ToArray();
+            }).ToArray();
         }
     }
 }

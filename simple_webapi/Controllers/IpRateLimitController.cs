@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace simple_webapi.Controllers
 {
-    [Route("api/ratelimit")]
+    [Route("Api/IpRateLimit")]
     [ApiController]
     public class IpRateLimitController : ControllerBase
     {
@@ -22,11 +22,29 @@ namespace simple_webapi.Controllers
             _ipPolicyStore = ipPolicyStore;
         }
 
-        [Route("get_ratelimit"),HttpGet]
+        [Route("GetIpRateLimitPolicies"),HttpGet]
         public async Task<IpRateLimitPolicies> Get()
         {
             return await _ipPolicyStore.GetAsync(_options.IpPolicyPrefix);
         }
 
+        [Route("PostIpRateLimitPolicy"), HttpPost]
+        public async void Post()
+        {
+            var pol = await _ipPolicyStore.GetAsync(_options.IpPolicyPrefix);
+
+            pol.IpRules.Add(new IpRateLimitPolicy
+            {
+                Ip = "8.8.4.4",
+                Rules = new List<RateLimitRule>(new RateLimitRule[] {
+                new RateLimitRule {
+                    Endpoint = "*:/Api/WeatherForecast",
+                    Limit = 10,
+                    Period = "1d" }
+            })
+            });
+
+            await _ipPolicyStore.SetAsync(_options.IpPolicyPrefix, pol);
+        }
     }
 }
