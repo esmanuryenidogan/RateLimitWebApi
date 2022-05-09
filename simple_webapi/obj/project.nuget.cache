@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "4IlX4NbS4MIwCHsnGAYpvdRSZFBRTr+VGuHOWUD6Fhca2Iy2ezjiuuWyJ7F8o6kYNFPe/fDvdPlxZsSz9bY0vg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\esmanur.yenidogan\\source\\repos\\simple_webapi\\simple_webapi\\simple_webapi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\aspnetcoreratelimit\\4.0.2\\aspnetcoreratelimit.4.0.2.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.9\\microsoft.extensions.caching.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.9\\microsoft.extensions.dependencyinjection.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.9\\microsoft.extensions.logging.abstractions.3.1.9.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
+    "C:\\Users\\esmanur.yenidogan\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
